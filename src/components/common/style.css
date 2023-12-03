@@ -1,0 +1,19 @@
+.navbar{
+    background-color: Black !important;
+}
+
+  .custom-container {
+    width: 50%;
+    float: right;
+  }
+  .hover-effect {
+    color: black; 
+    background-color: white;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+  
+    /* Hover styles */
+    :hover {
+      color: white;
+      background-color: #007cd0;
+    }
+  }

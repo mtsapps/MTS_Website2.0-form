@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+    /* Your styles for mobile screens go here */
+    .buuuuuuuuutooon{
+      flex-direction: "column";
+      align-items:"center"
+    }
+  
+    /* Add more styles as needed */
+  }

@@ -1,0 +1,41 @@
+<svg id="icon-radar-blue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_156" data-name="Rectángulo 156" width="100" height="100" fill="#2e72ff"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectángulo_153" data-name="Rectángulo 153" width="58.824" height="58.824" fill="#2e72ff"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rectángulo_154" data-name="Rectángulo 154" width="85.353" height="100" fill="#2e72ff"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_452" data-name="Grupo 452" clip-path="url(#clip-path)">
+    <g id="Grupo_451" data-name="Grupo 451">
+      <g id="Grupo_450" data-name="Grupo 450" clip-path="url(#clip-path)">
+        <g id="Grupo_443" data-name="Grupo 443" opacity="0.15">
+          <g id="Grupo_442" data-name="Grupo 442">
+            <g id="Grupo_441" data-name="Grupo 441" clip-path="url(#clip-path)">
+              <path id="Trazado_3969" data-name="Trazado 3969" d="M100,50A50.008,50.008,0,1,1,85.353,14.647,49.786,49.786,0,0,1,100,50" fill="#2e72ff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Grupo_446" data-name="Grupo 446" transform="translate(20.588 20.588)" opacity="0.15">
+          <g id="Grupo_445" data-name="Grupo 445">
+            <g id="Grupo_444" data-name="Grupo 444" clip-path="url(#clip-path-4)">
+              <path id="Trazado_3970" data-name="Trazado 3970" d="M65.824,36.412A29.412,29.412,0,1,1,36.412,7,29.411,29.411,0,0,1,65.824,36.412" transform="translate(-7 -7)" fill="#2e72ff"/>
+            </g>
+          </g>
+        </g>
+        <g id="Grupo_449" data-name="Grupo 449" opacity="0.15">
+          <g id="Grupo_448" data-name="Grupo 448">
+            <g id="Grupo_447" data-name="Grupo 447" clip-path="url(#clip-path-5)">
+              <path id="Trazado_3971" data-name="Trazado 3971" d="M85.353,85.353a50,50,0,1,1,0-70.706L50,50Z" fill="#2e72ff"/>
+            </g>
+          </g>
+        </g>
+        <path id="Trazado_3972" data-name="Trazado 3972" d="M36.529,24.765A11.765,11.765,0,1,1,24.765,13,11.765,11.765,0,0,1,36.529,24.765" transform="translate(25.235 25.235)" fill="#2e72ff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,444 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+::-moz-selection {
+  background-color: #FECA00;
+  color: #22212B;
+}
+::selection {
+  background-color: #FECA00;
+  color: #22212B;
+}
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden !important; }
+img { image-rendering: -webkit-optimize-contrast !important; }
+p { margin: 0 !important; }
+b { font-weight: bold !important; }
+
+.menu-weewoo .elementor-container.elementor-column-gap-no.elementor-motion-effects-parent { overflow: auto; border-radius: 10px; }
+.img-wide-txt .elementor-motion-effects-container, .img-wide-txt .elementor-background-overlay { border-radius: 10px; }
+.img-vert-txt .elementor-widget-wrap, .img-vert-txt .elementor-background-overlay { border-radius: 10px; }
+
+
+/*---------EJEMPLO DE MULTIPLES BACKGROUNDS---------------------------------------------------*/
+/*.elementor-39 .elementor-element.elementor-element-8c19aa4 > .elementor-background-overlay {
+	background:
+	url("http://localhost/weewoo/wp-content/uploads/2022/05/forms-abstract-01.png") 23% 200px no-repeat,
+	url("http://localhost/weewoo/wp-content/uploads/2022/05/line-diagonal-yellow.svg") 23% 0px no-repeat;
+}*/
+.elementor-39 .elementor-element.elementor-element-8c19aa4 > .elementor-background-overlay {
+	background:
+	url("http://localhost/weewoo/wp-content/uploads/2022/05/line-diagonal-yellow.svg") 25% 0px no-repeat,
+	url("http://localhost/weewoo/wp-content/uploads/2022/05/line-diagonal-yellow02.svg") right bottom no-repeat;
+
+}
+
+
+
+
+
+
+/* IMG ZOOM */
+
+
+
+
+/*body.elementor-page-26 { background: url("http://localhost/weewoo/wp-content/uploads/2022/05/weewoo-home.jpg") no-repeat top center; }*/
+/*body.elementor-page-39 { background: url("http://localhost/weewoo/wp-content/uploads/2022/05/weewoo-manifesto.jpg") no-repeat top center; }*/
+/*body.elementor-page-41 { background: url("http://localhost/weewoo/wp-content/uploads/2022/05/weewoo-services-01.jpg") no-repeat top center; }*/
+/*body.elementor-page-43 { background: url("http://localhost/weewoo/wp-content/uploads/2022/05/weewoo-case-studies-04.jpg") no-repeat top center; }*/
+/*body.elementor-page-45 { background: url("http://localhost/weewoo/wp-content/uploads/2022/05/weewoo-careers-04.jpg") no-repeat center 291px; }*/
+/*body.elementor-page-543 { background: url("http://localhost/weewoo/wp-content/uploads/2022/06/weewoo-contact-01.jpg") no-repeat top center; }*/
+
+
+/*-----------------------------------CONTADORES Y TITULOS CON DEGRADADOS-------------------------------------*/
+
+.contador01 .elementor-counter-number {
+	/*background: -webkit-linear-gradient(#fff, #39B5CB);*/
+	background: linear-gradient(0deg, rgba(57,181,203,1) 0%, rgba(255,255,255,1) 75%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ }
+
+ .contador02 .elementor-counter-number {
+	/*background: -webkit-linear-gradient(#fff, #39B5CB);*/
+	background: linear-gradient(90deg, rgba(255,162,0,1) 0%, rgba(251,53,130,1) 25%, rgba(149,106,248,1) 50%, rgba(87,154,251,1) 75%, rgba(70,255,231,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ }
+
+.contador03 .elementor-counter-number, .contador03 .elementor-counter-number-suffix {
+	background: linear-gradient(0deg, rgba(255,116,213,1) 0%, rgba(255,233,139,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+.contador03 .elementor-counter-number-wrapper {
+	/*background: -webkit-linear-gradient(#fff, #39B5CB);*/
+	background: linear-gradient(90deg, rgba(255,116,213,1) 0%, rgba(255,233,139,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ }
+
+
+ .contador03 .elementor-counter, .contador04 .elementor-counter, .contador05 .elementor-counter { text-align: -webkit-center; }
+
+ .elementor-43 .elementor-element.elementor-element-57370d0 .elementor-counter-number-wrapper {
+ 	/*border: 1px solid red;*/
+    /*width: fit-content;*/
+    /*padding: 0px 15px;*/
+ }
+
+.contador04 .elementor-counter-number, .contador04 .elementor-counter-number-prefix {
+	background: linear-gradient(0deg, rgba(255,162,0,1) 0%, rgba(251,53,130,1) 25%, rgba(149,106,248,1) 50%, rgba(87,154,251,1) 75%, rgba(70,255,231,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ 	padding: 0px 10px;
+}
+.contador04 .elementor-counter-number-wrapper {
+	background: linear-gradient(90deg, rgba(255,162,0,1) 0%, rgba(251,53,130,1) 25%, rgba(149,106,248,1) 50%, rgba(87,154,251,1) 75%, rgba(70,255,231,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ }
+
+
+ .elementor-43 .elementor-element.elementor-element-f7099a1 .elementor-counter-number-wrapper {
+ 	width: fit-content;
+    padding: 0px 15px;
+ }
+
+ .contador04 .elementor-counter .elementor-counter-number-prefix {
+ 	text-transform: none;
+ }
+
+.contador05 .elementor-counter-number, .contador05 .elementor-counter-number-prefix, .contador05 .elementor-counter-number-suffix {
+	background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(1,217,255,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+.contador05 .elementor-counter-number-wrapper {
+	background: linear-gradient(180deg, rgba(251,251,251,1) 0%, rgba(1,217,255,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+
+ .contador05 .elementor-counter .elementor-counter-number-prefix {
+ 	font-size: 160px;
+    line-height: 200px;
+    margin-right: 10px;
+ }
+
+ 
+
+
+ .contador-mapa .elementor-counter .elementor-counter-number-prefix {
+    display: none;
+}
+
+.contador-mapa .elementor-counter-number, .contador-mapa .elementor-counter-number-suffix {
+	background: linear-gradient(0deg, rgba(57,181,203,1) 0%, rgba(46,157,255,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+.contador-mapa .elementor-counter-number-wrapper {
+	background: linear-gradient(90deg, rgba(57,181,203,1) 0%, rgba(46,157,255,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+
+
+ .titular-deg h2 {
+ 	background: linear-gradient(90deg, rgba(255,162,0,1) 0%, rgba(251,53,130,1) 25%, rgba(149,106,248,1) 50%, rgba(87,154,251,1) 75%, rgba(70,255,231,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ 	
+ }
+
+.boton-start .tme-btn-wrapper a:before {
+	background: linear-gradient(90deg, rgba(57,181,203,1) 0%, rgba(46,157,255,1) 100%);
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------CASE STUDY-------------------------------------------*/
+
+.caseStudy-2line img {
+    margin-top: 30px;
+}
+
+
+/*-------------------------------------------CAREERS-------------------------------------------*/
+
+.item01 .cafe-wrap-extend-content, .item02 .cafe-wrap-extend-content, .item03 .cafe-wrap-extend-content, .item04 .cafe-wrap-extend-content {
+	opacity: 1 !important;
+}
+
+.item01 h3.cafe-banner-title {
+    background: url(../../uploads/2022/05/icon-radar-green.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    padding-block: unset;
+    padding-top: 120px;
+ }
+ .item02 h3.cafe-banner-title {
+    background: url(../../uploads/2022/05/icon-radar-orange.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    padding-block: unset;
+    padding-top: 120px;
+ }
+ .item03 h3.cafe-banner-title {
+    background: url(../../uploads/2022/05/icon-radar-yellow.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    padding-block: unset;
+    padding-top: 120px;
+ }
+ .item04 h3.cafe-banner-title {
+    background: url(../../uploads/2022/05/icon-radar-blue.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: 0px 0px !important;
+    padding-block: unset;
+    padding-top: 120px;
+ }
+
+.col-item .elementor-widget-container {
+	border-radius: 10px;
+	overflow: auto;
+}
+
+
+.item-canarias .elementor-widget-wrap {
+	transition: background-position 0.3s, padding-bottom 0.3s !important;
+	ba
+
+}
+.item-canarias .elementor-widget-wrap:hover {
+	background-position-y: 45% !important;
+	padding-bottom: 100px !important;
+}
+
+.item-job {
+	transition: background-position 0.3s !important;
+	background-size: 105% 105%;
+	background-position-x: right !important;
+}
+.item-job:hover {
+	background-position-x: 55% !important;
+}
+
+/*.item-job-demo .elementor-background-overlay {
+	background: linear-gradient(90deg, rgba(34,31,78,0.5) 0%, rgba(34,31,78,0.5) 100%);
+	
+	transition: opacity 0.5s, background 0.5s !important;
+}
+
+.item-job-demo .elementor-background-overlay:hover {
+	background: linear-gradient(90deg, rgba(57,181,203,1) 0%, rgba(34,31,78,0.5) 100%);
+	opacity: 1 !important;
+}*/
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------CONTACT-------------------------------------------*/
+
+.form-contact .eapps-form-element-label {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	color: var( --e-global-color-primary ) !important;
+}
+.form-contact .eapps-form-element-input-text {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	color: var( --e-global-color-primary ) !important;
+
+}
+.form-contact input::placeholder, .form-contact textarea::placeholder {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+ 	color: #22212B59;
+  	font-size: 16px;
+}
+.form-contact .eapps-form-style-flat .eapps-form-element-input-text {
+	padding: 16px 20px !important;
+}
+
+.form-contact .eapps-form-element-wrapper {
+	margin-bottom: 10px !important;
+}
+
+.form-contact .eapps-form-style-flat .eapps-form-element-input-text, .form-contact .eapps-form-style-flat .eapps-form-element-input-textarea {
+	background-color: #EEF1FB !important;
+}
+.form-contact .eapps-form-style-flat .eapps-form-element-input-text:focus, .form-contact .eapps-form-style-flat .eapps-form-element-input-textarea:focus {
+	background-color: #E8EBF5 !important;
+}
+
+.form-contact .eapps-form-style-flat .eapps-form-element-input-textarea {
+	height: 200px !important;
+}
+
+.form-contact .eapps-form-element-checkbox-options-item-caption {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 16px !important;
+	color: #A0A0B5 !important;
+}
+.form-contact .eapps-form-actions-button {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	font-weight: 400px;
+	background: linear-gradient(90deg, rgba(57,181,203,1) 0%, rgba(46,157,255,1) 100%) !important;
+	padding: 21px 60px !important;
+
+}
+.form-contact .eapps-form-actions-container {
+	float: right;
+	margin-top: -62px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------JOB OFFER-------------------------------------------*/
+
+.form-job .eapps-form-element-label {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	color: var( --e-global-color-primary ) !important;
+}
+.form-job .eapps-form-caption {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	color: var( --e-global-color-primary ) !important;
+}
+.form-job .eapps-form-element-input-text {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	color: var( --e-global-color-primary ) !important;
+
+}
+.form-job input::placeholder, .form-job textarea::placeholder {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+ 	color: #22212B59;
+  	font-size: 16px;
+}
+.form-job .eapps-form-style-flat .eapps-form-element-input-text {
+	padding: 16px 20px !important;
+}
+
+.form-job .eapps-form-element-wrapper {
+	margin-bottom: 10px !important;
+}
+
+.form-job .eapps-form-style-flat .eapps-form-element-input-text, .form-job .eapps-form-style-flat .eapps-form-element-input-textarea,
+.form-job .eapps-form-style-flat .eapps-form-element-input-dropdown, .form-job .eapps-form-style-flat .eapps-form-element-input-file-wrapper {
+	background-color: #EEF1FB !important;
+}
+.form-job .eapps-form-style-flat .eapps-form-element-input-text:focus, .form-job .eapps-form-style-flat .eapps-form-element-input-textarea:focus,
+.form-job .eapps-form-style-flat .eapps-form-element-input-dropdown:focus {
+	background-color: #E8EBF5 !important;
+}
+
+.form-job .eapps-form-style-flat .eapps-form-element-input-textarea {
+	height: 100px !important;
+}
+
+.form-job .eapps-form-element-checkbox-options-item-caption {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 16px !important;
+	color: #A0A0B5 !important;
+}
+.form-job .eapps-form-actions-button {
+	font-family: 'Proxima Nova', Arial, Helvetica, sans-serif !important;
+	font-size: 18px !important;
+	font-weight: 400px;
+	background: linear-gradient(90deg, rgba(57,181,203,1) 0%, rgba(46,157,255,1) 100%) !important;
+	padding: 21px 60px !important;
+
+}
+.form-job .eapps-form-actions-container {
+	float: right;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------RESPONSIVE-------------------------------------------*/
+
+/* PROGRESS BAR HOME */
+
+@media (max-width: 767px) {
+
+.progress-bar .tme-progress-bar {
+	height: 70px !important;
+}
+
+.caseStudy-1line .elementor-image-box-wrapper, .caseStudy-2line .elementor-image-box-wrapper {
+	display: inline-flex;
+}
+.caseStudy-2line img {
+    margin-top: 0px;
+}
+
+.caseStudy-1line h3.elementor-image-box-title, .caseStudy-2line h3.elementor-image-box-title {
+    margin-left: 25px;
+}
+
+.caseStudy-2line h3.elementor-image-box-title {
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+}
+.caseStudy-1line h3.elementor-image-box-title {
+    margin-top: 15px;
+}
+.contador04 .elementor-counter-number, .contador04 .elementor-counter-number-prefix {
+	background: linear-gradient(0deg, rgba(255,162,0,1) 0%, rgba(251,53,130,1) 25%, rgba(149,106,248,1) 50%, rgba(87,154,251,1) 75%, rgba(70,255,231,1) 100%);
+ 	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+ 	padding: 0px;
+}
+
+.contador05 .elementor-counter .elementor-counter-number-prefix {
+ 	font-size: inherit;
+    line-height: inherit;
+    margin-right: 10px;
+    margin-top: 10px;
+ }
+
+ .form-contact .eapps-form-actions-container {
+	float: right;
+	margin-top: 0px !important;
+	width: 100% !important;
+}
+
+.form-contact .eapps-form-actions {
+	display: grid;
+	text-align: center;
+}
+  
+}
+
+@media (max-width: 1024px) {
+
+.caseStudy-2line h3.elementor-image-box-title {
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+.contador05 .elementor-counter .elementor-counter-number-prefix {
+ 	font-size: inherit;
+    margin-right: 10px;
+    line-height: inherit;
+ }
+
+}

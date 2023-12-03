@@ -1,0 +1,74 @@
+.elementor-kit-5{--e-global-color-primary:#22212B;--e-global-color-secondary:#FFFFFF;--e-global-color-text:#22212B;--e-global-color-accent:#39B5CB;--e-global-color-cf5f7b8:#FF502E;--e-global-color-dd5a74c:#FECA00;--e-global-color-8e52073:#007CD0;--e-global-color-062022a:#A0A0B5;--e-global-color-e594b6d:#EEF1FB;--e-global-color-1daa657:#2E72FF;--e-global-color-83f39c8:#D8DCEA;--e-global-color-44bef5e:#9AE1FF;--e-global-typography-primary-font-family:"Gotham";--e-global-typography-primary-font-size:30px;--e-global-typography-primary-font-weight:normal;--e-global-typography-primary-text-transform:none;--e-global-typography-primary-line-height:36px;--e-global-typography-primary-letter-spacing:0px;--e-global-typography-secondary-font-family:"Proxima Nova";--e-global-typography-secondary-font-size:30px;--e-global-typography-secondary-font-weight:normal;--e-global-typography-secondary-line-height:42px;--e-global-typography-secondary-letter-spacing:-0.7px;--e-global-typography-text-font-family:"Proxima Nova";--e-global-typography-text-font-size:16px;--e-global-typography-text-font-weight:400;--e-global-typography-text-line-height:30px;--e-global-typography-accent-font-family:"Proxima Nova";--e-global-typography-accent-font-weight:500;--e-global-typography-9c1db08-font-family:"Gotham";--e-global-typography-9c1db08-font-size:60px;--e-global-typography-9c1db08-font-weight:600;--e-global-typography-9c1db08-text-transform:none;--e-global-typography-9c1db08-line-height:72px;--e-global-typography-f43ffbf-font-family:"Proxima Nova";--e-global-typography-f43ffbf-font-size:30px;--e-global-typography-f43ffbf-font-weight:normal;--e-global-typography-f43ffbf-line-height:48px;--e-global-typography-f43ffbf-letter-spacing:0px;--e-global-typography-b4dc592-font-family:"Proxima Nova";--e-global-typography-b4dc592-font-size:16px;--e-global-typography-b4dc592-font-weight:normal;--e-global-typography-b4dc592-text-transform:none;--e-global-typography-b4dc592-line-height:30px;--e-global-typography-49a3e80-font-family:"Gotham";--e-global-typography-49a3e80-font-size:36px;--e-global-typography-49a3e80-font-weight:700;--e-global-typography-49a3e80-text-transform:uppercase;--e-global-typography-49a3e80-line-height:42px;--e-global-typography-49a3e80-letter-spacing:-2.5px;--e-global-typography-ffb2792-font-family:"Gotham";--e-global-typography-ffb2792-font-size:96px;--e-global-typography-ffb2792-font-weight:800;--e-global-typography-ffb2792-text-transform:uppercase;--e-global-typography-ffb2792-line-height:96px;--e-global-typography-ffb2792-letter-spacing:-2.5px;--e-global-typography-5ace4eb-font-family:"Gotham";--e-global-typography-5ace4eb-font-size:108px;--e-global-typography-5ace4eb-line-height:84px;--e-global-typography-5ace4eb-letter-spacing:-0.2px;--e-global-typography-bc57dbb-font-family:"Gotham";--e-global-typography-bc57dbb-font-size:96px;--e-global-typography-bc57dbb-font-weight:normal;--e-global-typography-bc57dbb-line-height:96px;--e-global-typography-bc57dbb-letter-spacing:-2.5px;--e-global-typography-d200aa4-font-family:"Proxima Nova";--e-global-typography-d200aa4-font-size:42px;--e-global-typography-d200aa4-line-height:72px;--e-global-typography-4c2c252-font-family:"Proxima Nova";--e-global-typography-4c2c252-font-size:36px;--e-global-typography-4c2c252-line-height:60px;--e-global-typography-eaa77e4-font-family:"Gotham";--e-global-typography-eaa77e4-font-size:54px;--e-global-typography-eaa77e4-font-weight:700;--e-global-typography-eaa77e4-line-height:54px;--e-global-typography-eaa77e4-letter-spacing:-1px;--e-global-typography-4bc991b-font-family:"Proxima Nova";--e-global-typography-4bc991b-font-size:21px;--e-global-typography-4bc991b-line-height:36px;--e-global-typography-14f2629-font-family:"Gotham";--e-global-typography-14f2629-font-size:96px;--e-global-typography-14f2629-font-weight:700;--e-global-typography-14f2629-line-height:96px;--e-global-typography-14f2629-letter-spacing:-2.5px;--e-global-typography-c96bad0-font-family:"Gotham";--e-global-typography-c96bad0-font-size:30px;--e-global-typography-c96bad0-font-weight:700;--e-global-typography-c96bad0-text-transform:uppercase;--e-global-typography-c96bad0-line-height:27px;--e-global-typography-c96bad0-letter-spacing:-0.7px;--e-global-typography-333db43-font-family:"Proxima Nova";--e-global-typography-333db43-font-size:18px;--e-global-typography-333db43-line-height:30px;}.elementor-section.elementor-section-boxed > .elementor-container{max-width:1340px;}.e-container{--container-max-width:1340px;}.elementor-widget:not(:last-child){margin-bottom:0px;}.elementor-element{--widgets-spacing:0px;}{}h1.entry-title{display:var(--page-title-display);}.site-header{padding-right:0px;padding-left:0px;}@media(max-width:1024px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:1024px;}.e-container{--container-max-width:1024px;}}@media(max-width:767px){.elementor-section.elementor-section-boxed > .elementor-container{max-width:767px;}.e-container{--container-max-width:767px;}}/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Gotham';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Book.svg#Gotham') format('svg');
+}
+@font-face {
+	font-family: 'Gotham';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Bold.svg#Gotham') format('svg');
+}
+@font-face {
+	font-family: 'Gotham';
+	font-style: normal;
+	font-weight: 800;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Black.svg#Gotham') format('svg');
+}
+@font-face {
+	font-family: 'Gotham';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Medium.svg#Gotham') format('svg');
+}
+@font-face {
+	font-family: 'Gotham';
+	font-style: normal;
+	font-weight: 900;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Gotham-Ultra.svg#Gotham') format('svg');
+}
+/* End Custom Fonts CSS */
+/* Start Custom Fonts CSS */@font-face {
+	font-family: 'Proxima Nova';
+	font-style: normal;
+	font-weight: normal;
+	font-display: auto;
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.eot');
+	src: url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.eot?#iefix') format('embedded-opentype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.woff2') format('woff2'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.woff') format('woff'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.ttf') format('truetype'),
+		url('https://web2.weewoo.com/wp-content/uploads/2022/05/Proxima-Nova.svg#ProximaNova') format('svg');
+}
+/* End Custom Fonts CSS */
