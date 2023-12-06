@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "../common/style.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import emailjs from "@emailjs/browser";
+import axios from "axios";
 const MultiStepForm = ({selectForm}) => {
   const [formData, setFormData] = useState({
     appLink: "",
@@ -28,24 +30,21 @@ const MultiStepForm = ({selectForm}) => {
   
   // let Calc=0;
   const placeHolderValue = (down) => {
-    if (down <= 100000) {
+    if (down <= 100) {
       return 100;
-    } else if (down <= 500000 && down > 100000) {
+    } else if (down <= 500 && down > 100) {
       return 150;
-    } else if (down <= 1000000 && down > 500000) {
+    } else if (down <= 1000 && down > 500) {
       return 200;
-    } else if (down <= 5000000 && down > 1000000) {
+    } else if (down <= 5000 && down > 1000) {
       return 500;
-    }
-    else if (down > 5000000) {
-      return 700;
     }
   };
   const appValue = () => {
     if (formData.netRevenue <= 0 || formData.spending <= 0) {
       return 0;
     } else {
-      let grossProfit = parseInt((formData.netRevenue - formData.spending)/3) * 10;
+      let grossProfit = parseInt(formData.netRevenue/formData.spending) * 5;
       if(grossProfit<=0){
         return 0;
       }
@@ -55,7 +54,7 @@ const MultiStepForm = ({selectForm}) => {
     }
   };
   const unpublishedCalc = (e) => {  
-    console.log("hellow")
+    // console.log("hellow")
     if (formData.firstName && formData.surname && formData.emailAddress && formData.linkedIn) {
       handleNext1(e)
     } else {
@@ -68,7 +67,7 @@ const MultiStepForm = ({selectForm}) => {
     
   }
   const publishedCalc = (e) => {  
-    console.log("hellow")
+    // console.log("hellow")
     if (formData.firstName && formData.surname && formData.emailAddress && formData.linkedIn) {
       handleNext(e)
     } else {
@@ -92,10 +91,7 @@ const MultiStepForm = ({selectForm}) => {
 const radioController=(e)=>{
   handleChange(e);
   
-  // handleNext(e);
-  // setTimeout(()=>{
-    
-  //  },5000)
+
   var beta=e.target.name;
   if(formData[beta]){
     handleNext(e);
@@ -114,24 +110,142 @@ const radioController=(e)=>{
   };
   useEffect(() => {
     finalAppValue();
-    console.log(
-      "calsjdkdbs ",
-      formData,
-      Vara,
-    );
+    // console.log(
+    //   "calsjdkdbs ",
+    //   formData,
+    //   Vara,
+    // );
   }, [formData, Vara, caller, unCall]);
+
+// const emailSender= async(e)=>{
+//   e.preventDefault();
+//   const serviceId='service_al75bek';
+//   const templateId='template_na3zwui';
+//   const publicKey='FYjrX4BaHmHCat4Hr';
+
+//   const data={
+//    service_Id:serviceId,
+//    template_Id:templateId,
+//    public_Key:publicKey,
+
+//     templateParams:{
+//     // Name: {{firstName}} {{surname}},
+//     firstName:formData.firstName,
+//     surname: formData.surname,
+//     // Email Address: {{emailAddress}},
+//     emailAddress: formData.emailAddress,
+//     // Linkedin: {{linkedIn}},
+//     linkedIn: formData.linkedIn,
+//     // App Link: {{appLink}},
+//     appLink: formData.appLink,
+//     // App's Platform: {{appPlatform}},
+//     appPlatform:formData.appPlatform,
+//     // Traffic Category: {{traffic}},
+//     traffic:formData.downloads,
+//     // Total Downloads: {{downloads}},
+//     downloads:formData.downloads,
+//     // Net Revenue For The Last 3 months: {{netRevenue}},
+//     netRevenue:formData.netRevenue,
+//     // Marketing Campaigns For The Last 3 months: {{spending}},
+//     spending:formData.spending,
+//     // Primary Source Of Revenue: {{revenueSource}},
+//     revenueSource:formData.netRevenue,
+//     otherSourceRevenue:formData.appPlatform,
+//     // Other Source of Revenue: {{otherSourceRevenue}},
+//   }
+// }
+// try {
+//   const res= await axios.post("https://api.emailjs.com/api/v1.0/email/send", data);
+//   console.log(res.data)
+//   setFormData({
+//     appLink: "",
+//     appPlatform: "",
+//     traffic: "",
+//     downloads: 0,
+//     netRevenue: 0,
+//     spending: 0,
+//     revenueSource: 0,
+//     otherSourceRevenue: 0,
+//     retentionPercentage: 0,
+//     subscribedUserPercentage: 0,
+//     firstName: "",
+//     surname: "",
+//     emailAddress: "",
+//     linkedIn: "",
+//   });
+// } catch (error) {
+//   console.log("Unable to send email", error);
+// }
+
+// }
+const emailSender = async (e) => {
+  e.preventDefault();
+  const serviceId = 'service_al75bek';
+  const templateId = 'template_na3zwui';
+  const publicKey = 'FYjrX4BaHmHCat4Hr';
+
+  const data = {
+    service_id: serviceId,
+    template_id: templateId,
+    user_id: publicKey, 
+
+    template_params: {
+      firstName: formData.firstName,
+      surname: formData.surname,
+      emailAddress: formData.emailAddress,
+      linkedIn: formData.linkedIn,
+      appLink: formData.appLink,
+      appPlatform: formData.appPlatform,
+      traffic: formData.downloads,
+      downloads: formData.downloads,
+      netRevenue: formData.netRevenue,
+      spending: formData.spending,
+      revenueSource: formData.netRevenue,
+      otherSourceRevenue: formData.appPlatform,
+    },
+  };
+
+  try {
+    const res = await axios.post('https://api.emailjs.com/api/v1.0/email/send', data);
+    console.log('Email sent successfully', res.data);
+    
+    setFormData({
+      appLink: '',
+      appPlatform: '',
+      traffic: '',
+      downloads: 0,
+      netRevenue: 0,
+      spending: 0,
+      revenueSource: 0,
+      otherSourceRevenue: 0,
+      retentionPercentage: 0,
+      subscribedUserPercentage: 0,
+      firstName: '',
+      surname: '',
+      emailAddress: '',
+      linkedIn: '',
+    });
+  } catch (error) {
+    console.error('Unable to send email', error);
+  }
+};
+
+
+
   const handleNext1= (e) => {
   
       setCurrentStep((prevStep) => prevStep + 1);
-      console.log(currentStep);
+      // console.log(currentStep);
       setVara(0);
       setUnCall(true);
+      emailSender(e);
     setTimeout(() => {
      window.location.href="https://maida.co/thankyou"
    },5000)
    
   };
 
+  
   const handleNext = (e) => {
     e.preventDefault();
     if (Vara == "" && Vara==0) {
@@ -139,7 +253,7 @@ const radioController=(e)=>{
       setUnCall(false);
     } else {
       setCurrentStep((prevStep) => prevStep + 1);
-      console.log(currentStep);
+      // console.log(currentStep);
       setVara(0);
       setUnCall(true);
     }
@@ -591,7 +705,7 @@ const radioController=(e)=>{
                     style={{ display: "block"}}
                   >
                     <h3 className="heading-h2 text-center mb-20 text-capitalize" style={{fontWeight:"bold"}}>
-                    TOTAL APP DOWNLOADS
+                    MY APP'S download Numbers from the Last 3 Months
                     </h3>
                     <input
                       type="text"
@@ -693,7 +807,7 @@ const radioController=(e)=>{
                         maxLength={256}
                         name="netRevenue"
                         data-name="netRevenue"
-                        placeholder ="USD$"
+                        placeholder
                         id="netRevenue"
                         required
                         onChange={handleChange}
@@ -717,7 +831,7 @@ const radioController=(e)=>{
                         maxLength={256}
                         name="spending"
                         data-name="spending"
-                        placeholder="USD$"
+                        placeholder
                         id="spending"
                         required
                         onChange={handleChange}
@@ -2141,7 +2255,7 @@ const radioController=(e)=>{
                     </div>
                     <input
                       type="submit"
-                      onclick={handleNext1}
+                      // onclick={handleNext1}
                       defaultValue="Next"
                       data-wait="Please wait..."
                       className="btn btn-std steps-btn btn-full result-btn next-step w-button"
@@ -2950,7 +3064,7 @@ const radioController=(e)=>{
                         type="submit"
                         defaultValue="Next"
                         data-wait="Please wait..."
-                        className="btn btn-std steps-btn btn-full result-btn next-step "
+                        className="btn btn-std steps-btn btn-full result-btn next-step w-button"
                           onClick={(e) => {
                           
                             window.location.href="https://maida.co/thankyou"
