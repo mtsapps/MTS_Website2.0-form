@@ -807,7 +807,7 @@ const emailSender = async (e) => {
                         maxLength={256}
                         name="netRevenue"
                         data-name="netRevenue"
-                        placeholder
+                        placeholder="USD$"
                         id="netRevenue"
                         required
                         onChange={handleChange}
@@ -831,7 +831,7 @@ const emailSender = async (e) => {
                         maxLength={256}
                         name="spending"
                         data-name="spending"
-                        placeholder
+                        placeholder="USD$"
                         id="spending"
                         required
                         onChange={handleChange}
