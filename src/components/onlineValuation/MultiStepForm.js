@@ -13,8 +13,8 @@ const MultiStepForm = ({selectForm}) => {
     downloads: 0,
     netRevenue: 0,
     spending: 0,
-    revenueSource: 0,
-    otherSourceRevenue: 0,
+    revenueSource: "",
+    otherSourceRevenue: "",
     retentionPercentage: 0,
     subscribedUserPercentage: 0,
     firstName: "",
@@ -180,9 +180,9 @@ const radioController=(e)=>{
 // }
 const emailSender = async (e) => {
   e.preventDefault();
-  const serviceId = 'service_al75bek';
-  const templateId = 'template_na3zwui';
-  const publicKey = 'FYjrX4BaHmHCat4Hr';
+  const serviceId = 'service_hhzknk4';
+  const templateId = 'template_cb3q8zj';
+  const publicKey = '2Wjt9PfICsCvuwV2A';
 
   const data = {
     service_id: serviceId,
@@ -196,12 +196,12 @@ const emailSender = async (e) => {
       linkedIn: formData.linkedIn,
       appLink: formData.appLink,
       appPlatform: formData.appPlatform,
-      traffic: formData.downloads,
+      traffic: formData.traffic,
       downloads: formData.downloads,
       netRevenue: formData.netRevenue,
       spending: formData.spending,
-      revenueSource: formData.netRevenue,
-      otherSourceRevenue: formData.appPlatform,
+      revenueSource: formData.revenueSource,
+      otherSourceRevenue: formData.otherSourceRevenue,
     },
   };
 
@@ -217,7 +217,7 @@ const emailSender = async (e) => {
       netRevenue: 0,
       spending: 0,
       revenueSource: 0,
-      otherSourceRevenue: 0,
+      otherSourceRevenue: "",
       retentionPercentage: 0,
       subscribedUserPercentage: 0,
       firstName: '',
@@ -705,7 +705,7 @@ const emailSender = async (e) => {
                     style={{ display: "block"}}
                   >
                     <h3 className="heading-h2 text-center mb-20 text-capitalize" style={{fontWeight:"bold"}}>
-                    MY APP'S download Numbers from the Last 3 Months
+                    My App's Total Download Record
                     </h3>
                     <input
                       type="text"
